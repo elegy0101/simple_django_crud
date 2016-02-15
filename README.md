@@ -4,11 +4,13 @@ Crud básico en django para practicar, en este sencillo proyecto se pueden reali
 # Ejecutando el proyecto
 
    python manage.py makemigrations
+   
    python manage.py migrate
 
 # Migrando tu base de datos
 
   python manage.py makemigrations "nombre de tu app"
+  
   python manage.py migrate "nombre de tu app"
 
 # Ahora puedes ejecutar el servidor de desarrollo
