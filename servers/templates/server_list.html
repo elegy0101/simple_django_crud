@@ -1,0 +1,11 @@
+<h1>Servers</h1>
+<ul>
+    {% for server in object_list %}
+    <li>{{ server.name }}  ({{ server.ip }} IPs)
+    <a href="{% url 'server_edit' server.id %}">edit</a>
+    <a href="{% url 'server_delete' server.id %}">delete</a>
+    </li>
+    {% endfor %}
+</ul>
+
+<a href="{% url 'new_server' %}">New</a>
